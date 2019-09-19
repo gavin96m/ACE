@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.experimental_photo.SetabActivity">
+
+    <TextView
+        android:id="@+id/key_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/a_key"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/value_a"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="@string/a_value"
+        android:inputType="numberSigned|numberDecimal"/>
+
+    <TextView
+        android:id="@+id/key_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/b_key"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/value_b"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="@string/b_value"
+        android:inputType="numberSigned|numberDecimal"/>
+
+    <TextView
+        android:id="@+id/key_x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/x_key"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/value_x"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="@string/x_value"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/key_y"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/y_key"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btnRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnRG"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/btnRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnRB"/>
+
+        <RadioButton
+            android:id="@+id/btnGB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnGB"/>
+
+        <RadioButton
+            android:id="@+id/btnGR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnGR"/>
+
+        <RadioButton
+            android:id="@+id/btnBR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnBR"/>
+
+        <RadioButton
+            android:id="@+id/btnBG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnBG"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnsubmit"/>
+
+</LinearLayout>

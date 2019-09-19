@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ACE</string>
+    <string name="action_settings">Settings</string>
+    <string name="a_key">a=</string>
+    <string name="a_value">please input the value of a.</string>
+    <string name="b_key">b=</string>
+    <string name="b_value">please input the value of b.</string>
+    <string name="x_key">X(Unit)(可不填)</string>
+    <string name="x_value">mol/L</string>
+    <string name="y_key">Y=</string>
+    <string name="btnRG">R:G</string>
+    <string name="btnRB">R:B</string>
+    <string name="btnGB">G:B</string>
+    <string name="btnGR">G:R</string>
+    <string name="btnBR">B:R</string>
+    <string name="btnBG">B:G</string>
+    <string name="btnsubmit">Submit</string>
+    <string name="welcome_word_1">A day without laughter</string>
+    <string name="welcome_word_2">is a day wasted。</string>
+    <string name="take_photo_button">Take Photo</string>
+    <string name="from_local_button">From Local</string>
+    <string name="next_button">NEXT</string>
+</resources>

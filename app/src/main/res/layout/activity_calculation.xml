@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/R_final"
+        android:layout_width="205dp"
+        android:layout_height="20dp"
+        android:text="R="
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/G_final"
+        android:layout_width="205dp"
+        android:layout_height="20dp"
+        android:text="G="
+        android:layout_below="@+id/R_final"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/B_final"
+        android:layout_width="205dp"
+        android:layout_height="20dp"
+        android:text="B="
+        android:layout_below="@+id/G_final"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/y_final"
+        android:layout_width="205dp"
+        android:layout_height="30dp"
+        android:text="y="
+        android:layout_toRightOf="@+id/R_final"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/x_final"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/B_final"
+        android:layout_below="@+id/y_final"
+        android:text="x="
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/fullphoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/B_final"
+        android:scaleType="fitXY">
+
+    </ImageView>
+
+
+</RelativeLayout>
