@@ -18,9 +18,9 @@ import java.text.DecimalFormat;
 
 public class CalculationActivity  extends Activity {
 
-    private int R_value;
-    private int G_value;
-    private int B_value;
+    private float R_value;
+    private float G_value;
+    private float B_value;
     private float y_value;
     private ImageView picture;
     private Bitmap bitmap;
@@ -141,11 +141,21 @@ public class CalculationActivity  extends Activity {
 
 //        float a_value = Float.valueOf(a).floatValue();
 
-        if(y_value<=1.0/255||y_value>255){
+        if(y_value<0||y_value>255){
             Toast.makeText(this, "y值咋了?", Toast.LENGTH_SHORT).show();
         }
+
+        //当浮点数相除时,除数为0时会返回无穷大; 当两个值都是0时会返回NaN(非数字)
+        if (Float.isInfinite(y_value)){
+            y_value = 0;
+        }else if (Float.isNaN(y_value)){
+            Toast.makeText(this, "好多0啊,我不会啊", Toast.LENGTH_SHORT).show();
+        }
+
+
         float a_value = Float.parseFloat(a);
         float b_value = Float.parseFloat(b);
+
 
 
         float x = (y_value-b_value)/a_value;
@@ -159,11 +169,13 @@ public class CalculationActivity  extends Activity {
         view_B.setText("B:"+B_value);
 
         //确保3位小数
-        DecimalFormat decimalFormat1=new DecimalFormat(".000");
-        DecimalFormat decimalFormat2=new DecimalFormat(".000");
-        String x_final = decimalFormat1.format(x);
-        String y_final = decimalFormat2.format(y_value);
+//        DecimalFormat decimalFormat1=new DecimalFormat("0.000");
+//        DecimalFormat decimalFormat2=new DecimalFormat("0.000");
+//        String x_final = decimalFormat1.format(x);
+//        String y_final = decimalFormat2.format(y_value);
 
+        String x_final= new DecimalFormat("0.000").format(x);
+        String y_final= new DecimalFormat("0.000").format(y_value);
 
         TextView view_x = findViewById(R.id.x_final);
         TextView view_y = findViewById(R.id.y_final);
